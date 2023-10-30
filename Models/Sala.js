@@ -7,11 +7,9 @@ Sala.init(
   {
     idUser1: {
       type: DT.INTEGER,
-      allowNull: false,
     },
     idUser2: {
       type: DT.INTEGER,
-      allowNull: false,
     },
   },
   {

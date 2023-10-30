@@ -5,7 +5,7 @@ const salaController = new SalaController();
 
 salasRoutes.get("", salaController.getAllSalas);
 salasRoutes.get("/:id", salaController.getSalaById);
-salasRoutes.post("", salaController.createSala);
+salasRoutes.post("/", salaController.createSala);
 salasRoutes.put("/:id", salaController.updateSala);
 salasRoutes.delete("/", salaController.deleteSala);
 
