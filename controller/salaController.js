@@ -1,3 +1,4 @@
+import { where } from "sequelize";
 import { Sala } from "../Models/index.js";
 
 class SalaController {
@@ -14,6 +15,15 @@ class SalaController {
       res.status(400).send({ success: false, message: error.message });
     }
   };
+
+  getSalaAvailable = async () => {
+    try {
+      const salaLibre = await Sala.findOne({where: idUser2 == null})
+      res.status(200).send(salaLibre)
+    } catch (error) {
+      res.status(400).send({ success: false, message: error.message });
+    }
+  }
 
   getSalaById = async (req, res) => {
     try {
