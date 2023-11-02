@@ -6,10 +6,10 @@ class Sala extends Model {}
 Sala.init(
   {
     idUser1: {
-      type: DT.INTEGER,
+      type: DT.STRING,
     },
     idUser2: {
-      type: DT.INTEGER,
+      type: DT.STRING,
     },
   },
   {

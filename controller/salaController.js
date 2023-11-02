@@ -37,7 +37,7 @@ class SalaController {
 
   createSala = async (req, res) => {
     try {
-      const { idUser1 } = req.params;
+      const { idUser1 } = req.body;
       const sala = await Sala.create({ idUser1 });
       if (!sala) throw new Error("La sala no puede estar vacio");
 
