@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-const database = "batallapokemon";
+const database = "miercoles";
 const username = "root";
 const password = ""; //para windows dejar vacio
 const dialect = "mysql";

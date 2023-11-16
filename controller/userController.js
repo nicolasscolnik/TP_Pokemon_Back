@@ -39,8 +39,6 @@ class UserController {
   createUser = async (req, res) => {
     try {
       const { name, lastName, mail } = req.body;
-      //  if (!name) throw new Error("El name no puede estar vacio");
-      //  console.log(`🚀 ~ RoleController ~ createRole= ~ name:`, name);
       const user = await User.create({ name, lastName, mail });
       if (!user) throw new Error("El user no puede estar vacio");
 
